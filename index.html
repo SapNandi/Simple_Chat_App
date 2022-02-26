@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <script
+      src="https://kit.fontawesome.com/68e5593642.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body>
+    <section class="chat_section">
+      <div class="brand">
+        <img
+          style="width: 100px; height: 100px"
+          src="public/image/logo.png"
+          alt="CHAT"
+        />
+      </div>
+
+      <div class="msg_area"></div>
+
+      <div class="text">
+        <textarea
+          id="textarea"
+          cols="30"
+          rows="1"
+          placeholder="Write a message.."
+        ></textarea>
+        <span><i class="fa-solid fa-paper-plane fa-xl send_message"></i></span>
+      </div>
+    </section>
+    
+    <section class="sidebar">
+      <!-- <ul>
+        <li>
+          <a class="items" href="#"
+            ><img class="user_img" src="/public/image/User2.png" alt="" />
+            Home</a
+          >
+        </li>
+        </ul> -->
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="server.js"></script>
+    <script src="/public/client.js"></script>
+  </body>
+</html>
